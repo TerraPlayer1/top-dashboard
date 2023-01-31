@@ -14,18 +14,12 @@ ul,li,h1 {
   margin: 0;
 }
 
-.header {
-  background-color: azure;
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-}
-
 .nav-top {
   display: grid;
   grid-template-columns: 70% 20%;
   gap: 8%;
   align-items: center;
-  padding: 10px 30px 20px 60px;
+  padding: 10px 30px 0px 60px;
 
 }
 
@@ -53,10 +47,11 @@ ul,li,h1 {
   display: grid;
   gap: 50px;
   align-items: center;
-  grid-template-columns: 1.8rem 2rem auto;
+  grid-template-columns: 1.8rem 2rem 1fr;
+  padding-right: 1rem;
 }
 
-.profile {
+.tnav-profile {
   width: 3.2rem;
   opacity: 0.8;
 }
@@ -64,6 +59,80 @@ ul,li,h1 {
 .tnav-name {
   font-size: 20px;
   font-weight: 600;
+}
+
+.nav-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 30px 0px 0px;
+  margin: 0.6rem;
+}
+
+.bnav-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-left: 3rem;
+}
+
+.bnav-profile {
+  display: grid;
+  width: 6rem;
+  opacity: 0.8;
+}
+
+.greeting-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding-left: 1.4rem;
+}
+
+.bnav-name, .greeting {
+  margin: 5px;
+  font-weight: 800;
+}
+
+.greeting {
+  font-size: 16px;
+}
+
+.bnav-name {
+  font-size: 26px;
+}
+
+.btn-wrapper {
+  display: grid;
+  grid-template-columns: 10rem 10rem auto;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10%;
+
+
+  /* display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 6rem; */
+}
+
+.bnav-button {
+  border: 0;
+  border-radius: 100px;
+  width: 8rem;
+  height: 3.4rem;
+  background-color: rgb(15, 125, 189);
+  
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.bnav-button:hover, .bnav-button:active {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.bnav-button:active {
+  transform: scale(0.97);
 }
 
 .sidebar {
