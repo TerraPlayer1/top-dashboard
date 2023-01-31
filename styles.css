@@ -178,4 +178,32 @@ ul,li,h1 {
 
 .content {
   background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 4rem 0rem;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgb(133, 82, 6);
+  width: 28rem;
+  height: 18rem;
+}
+
+.news-wrapper {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.news-card {
+  background-color: aqua;
+  width: 18rem;
+  height: 24rem;
 }
